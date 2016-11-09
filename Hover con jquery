@@ -1,0 +1,14 @@
+/*  La funcion hover en jquery puede manejar la entrada y salida del puntero a través de dos funciones */
+            $(".boton").hover(function(){
+                $(this).addClass("botonMarcado");
+            },function(){
+                $(this).removeClass("botonMarcado");
+            });
+            
+/* Ejemplo: */
+
+$(".boton").hover(function(){
+                $(this).css("backgroundColor","#000");
+            },function(){
+                $(this).css("backgroundColor","#fff");
+            });
