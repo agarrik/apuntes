@@ -12,3 +12,10 @@ $(".boton").hover(function(){
             },function(){
                 $(this).css("backgroundColor","#fff");
             });
+
+/* Función para  agregar una clase y también quitarla. En este caso, agrega la clase .botonMarcado*/
+            $(".boton").hover(function(){
+                $(this).addClass("botonMarcado");
+            },function(){
+                $(this).removeClass("botonMarcado");
+            });
