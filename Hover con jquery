@@ -6,7 +6,6 @@
             });
             
 /* Ejemplo: */
-
 $(".boton").hover(function(){
                 $(this).css("backgroundColor","#000");
             },function(){
@@ -17,5 +16,12 @@ $(".boton").hover(function(){
             $(".boton").hover(function(){
                 $(this).addClass("botonMarcado");
             },function(){
+                $(this).removeClass("botonMarcado");
+            });
+            
+            
+// Con toggleClass alternamos una clase con otra
+            $(".boton").click(function(){
+                $(this).toggleClass("activo");
                 $(this).removeClass("botonMarcado");
             });
