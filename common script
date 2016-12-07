@@ -1,0 +1,6 @@
+// Script para que cuando haya navegación por medio de id's, no brince hacia la sección si no que tenga animación de scroll
+  jQuery('a[href*=#]:not([href=#])').click(function() {
+	jQuery('a').removeClass('selected');
+// ó
+	$('a[href*=#]:not([href=#])').click(function() {
+	$('a').removeClass('selected');
